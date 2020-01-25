@@ -209,7 +209,7 @@ public class Project extends JFrame
         JPanel calcPanel = new JPanel();
         calcPanel.setLayout(new FlowLayout(FlowLayout.CENTER));
 
-        JLabel inputLabel = new JLabel("2 +");
+        JLabel inputLabel = new JLabel("5 +");
         JTextField input = new JTextField("", 10);
         JButton calcButton = new JButton("Расчет");
 
@@ -254,9 +254,9 @@ public class Project extends JFrame
                 int inputNumber = Integer.parseInt(inputText);
 
                 Calculator calculator = new Calculator();
-                int result = calculator.calc(2, inputNumber);
+                int result = calculator.calc(5, inputNumber);
 
-                result1Model.addElement("2");
+                result1Model.addElement("5");
                 result1Model.addElement(Integer.toString(inputNumber));
                 result1Model.addElement(Integer.toString(result));
 
